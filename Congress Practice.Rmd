@@ -1,0 +1,25 @@
+---
+title: "Congress Practice"
+author: "Emily Ni"
+date: "2/4/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+```{r}
+library(gov.1005.data)
+data("congress")
+
+head(congress)
+congress %>% arrange(desc(age))
+```
+```{r}
+data(congress)
+
+congress %>% arrange(desc(age))
+```
+
