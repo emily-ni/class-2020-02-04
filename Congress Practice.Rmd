@@ -12,14 +12,6 @@ library(tidyverse)
 
 ```{r}
 library(gov.1005.data)
-data("congress")
-
-head(congress)
-congress %>% arrange(desc(age))
-```
-```{r}
-data(congress)
-
 congress %>% arrange(desc(age))
 ```
 

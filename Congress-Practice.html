@@ -370,35 +370,6 @@ summary {
 
 
 <pre class="r"><code>library(gov.1005.data)
-data(&quot;congress&quot;)
-
-head(congress)</code></pre>
-<pre><code>## # A tibble: 6 x 7
-##    year party firstname lastname    age incumbent chamber
-##   &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;     &lt;chr&gt;     &lt;dbl&gt; &lt;lgl&gt;     &lt;chr&gt;  
-## 1  1947 D     Joseph    Mansfield  85.9 TRUE      house  
-## 2  1947 D     Robert    Doughton   83.2 TRUE      house  
-## 3  1947 D     Adolph    Sabath     80.7 TRUE      house  
-## 4  1947 R     Charles   Eaton      78.8 TRUE      house  
-## 5  1947 R     William   Lewis      78.3 FALSE     house  
-## 6  1947 R     James     Gallagher  78   FALSE     house</code></pre>
-<pre class="r"><code>congress %&gt;% arrange(desc(age))</code></pre>
-<pre><code>## # A tibble: 18,635 x 7
-##     year party firstname lastname     age incumbent chamber
-##    &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;     &lt;chr&gt;      &lt;dbl&gt; &lt;lgl&gt;     &lt;chr&gt;  
-##  1  2001 R     J.        Thurmond    98.1 TRUE      senate 
-##  2  1999 R     J.        Thurmond    96.1 TRUE      senate 
-##  3  2009 D     Robert    Byrd        95.1 TRUE      senate 
-##  4  1997 R     J.        Thurmond    94.1 TRUE      senate 
-##  5  2013 D     Frank     Lautenberg  93   TRUE      senate 
-##  6  1995 R     J.        Thurmond    92.1 TRUE      senate 
-##  7  1959 D     Theodore  Green       91.3 TRUE      senate 
-##  8  2011 D     Daniel    Inouye      90.3 TRUE      senate 
-##  9  1993 R     J.        Thurmond    90.1 TRUE      senate 
-## 10  2013 R     Ralph     Hall        89.7 TRUE      house  
-## # … with 18,625 more rows</code></pre>
-<pre class="r"><code>data(congress)
-
 congress %&gt;% arrange(desc(age))</code></pre>
 <pre><code>## # A tibble: 18,635 x 7
 ##     year party firstname lastname     age incumbent chamber
